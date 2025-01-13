@@ -1,0 +1,82 @@
+#eduction{
+    width: 100%;
+    height: 150vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-content:center;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    position: relative;
+    top: 60px;
+
+}
+#eduction .title{
+
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    color: tomato;
+    /* background-color: aliceblue; */
+}
+
+.deg{
+
+    width: 300px;
+    height: 150px;
+    background-color:rgb(121, 80, 255);
+   text-align: center;
+   /* border-radius: 10px; */
+   border: 2px solid #FFD700;
+   color: #FFD700;
+   display: flex;
+   flex-direction: column;
+   align-content: center;
+   justify-content: center;
+
+}
+
+@media   screen  and (min-width:1024px){
+
+    #eduction{
+        height: 60vh;
+        /* border: 2px solid red; */
+    }
+    .deg{
+
+        width: 280px;
+        height: 150px;
+        background-color:rgb(121, 80, 255);
+       text-align: center;
+       /* border-radius: 10px; */
+       border: 2px solid #FFD700;
+       color: #FFD700;
+       display: flex;
+       flex-direction: column;
+       align-content: center;
+       justify-content: center;
+       position: relative;
+       bottom: 40px;
+    
+
+    }
+}
+
+@media   screen  and (min-width:700px){
+    
+    #eduction{
+        height: 100vh;
+    }
+}

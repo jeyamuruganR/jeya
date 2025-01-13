@@ -1,0 +1,177 @@
+.navcontainer{
+    position: fixed;
+    top: 0;
+    /* background-color: aqua; */
+    width: 100%;
+    height:20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    z-index: 5;
+
+   
+
+}
+.navcontainer .logo{
+
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: .6rem;
+    font-weight: 600;
+
+    
+}
+.navcontainer .logo h2::first-letter{
+
+    color: RED;
+}
+
+.navcontainer .open{
+    width: 30px;
+    height: 30px;
+    background-color: coral;
+    border-radius: 10px 0px 10px 30px;
+    position: absolute;
+    right: 0;
+    top: 140px;
+    cursor: pointer;
+}
+.navcontainer .nav{
+    position: absolute;
+    /* background-color: aqua; */
+    right: 0px;
+    top: 40px;
+    width: 50px;
+    height: 300px;
+    /* cursor: pointer; */
+    /* background-color:coral; */
+    border-radius: 10px;
+    /* overflow: hidden; */
+    transition: 1s;
+   display: flex;
+   align-content: center;
+   justify-content: center;
+    
+
+}
+
+
+.navcontainer .nav  ul {
+
+    list-style: none;
+    display: flex;
+    flex-direction:column ;
+    /* border: 2px solid red; */
+    width: 200px;
+    padding: 0;
+} 
+.navcontainer .nav ul li{
+
+    
+    /* border-bottom: 2px solid gray; */
+ 
+    /* border: 2px solid green; */
+    width: 200px;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 16px;
+}
+
+.navcontainer .nav ul li a{
+    
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-decoration: none;
+   color: white;
+   /* border: 2px solid red; */
+   width: 200px;
+
+   
+}
+
+.navcontainer .nav  ul li a span:first-child{
+    
+    position: absolute;
+    left: 20px;
+    display: none;
+
+
+}
+.navcontainer .nav  ul li a span:last-child{
+  
+  background-color:coral;
+  width: 30px;
+  height: 30px;
+  border-radius:100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  /* border: 2px solid #1f1f1f; */
+  box-shadow: 1px 1px 10px coral ;
+
+}
+.navcontainer .nav  ul li:nth-child(1) a:hover span:last-child::after,.navcontainer .nav  ul li:nth-child(2) a:hover span:last-child::after,
+
+.navcontainer .nav  ul li:nth-child(3) a:hover span:last-child::after,.navcontainer .nav  ul li:nth-child(4) a:hover span:last-child::after,.navcontainer .nav  ul li:nth-child(5) a:hover span:last-child::after,.navcontainer .nav  ul li:nth-child(6) a:hover span:last-child::after
+{
+    
+    content: "HOME";
+    position: absolute;
+    left: -53px;
+    top: 18px;
+    height: 5px;
+    padding: 10px;
+    width: 55px;
+    font-weight: 800;
+    font-size: .7rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 10px 0 0 10px ;
+    z-index: -1;
+    color: coral;
+    text-shadow: 1px 1px 10px coral;
+
+    
+}
+
+.navcontainer .nav  ul li:nth-child(2) a:hover span:last-child::after{
+    content: "ABOUT";
+    top: 65px;
+
+
+}
+.navcontainer .nav  ul li:nth-child(3) a:hover span:last-child::after{
+    
+    content: "PROJECT";
+    top: 111px;
+    left: -60px;
+
+
+}
+.navcontainer .nav  ul li:nth-child(4) a:hover span:last-child::after{
+    
+    content: "SKILS";
+    top: 157px;
+    left: -40px;
+
+
+}
+.navcontainer .nav  ul li:nth-child(5) a:hover span:last-child::after{
+    
+    content: "EDUCTION";
+    top: 203px;
+    width: 60PX;
+    left: -74PX;
+
+}
+.navcontainer .nav  ul li:nth-child(6) a:hover span:last-child::after{
+    
+    content: "CONTECT";
+    top: 248px;
+    width: 65PX;
+    left: -70PX;
+}

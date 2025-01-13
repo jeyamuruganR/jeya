@@ -1,0 +1,176 @@
+#project{
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    /* border: 2px solid red; */
+    margin-bottom: 20px;
+    padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#project .head{
+
+    text-align: center;
+    margin-top: 30px;
+    text-transform: uppercase;
+    color: tomato;
+    font-weight: 900;
+
+}
+
+#project .container{
+    /* background-color:#1a1a1a; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+
+}
+#project .container .project{
+    /* background-color: antiquewhite; */
+    display: flex;
+    /* gap: 10px; */
+    justify-content: center;
+}
+#project .container .project:nth-child(even){
+    flex-direction: row-reverse;
+}
+#project .container .project .proimage{
+    width: 50%;
+    height: 250px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: -30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+
+}
+#project .container .project .proimage img{
+    width: 100%;
+    height: 250px;
+}
+#project .container .project .text_container{
+    width: 50%;
+    height: 250px;
+    background-color:black;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+#project .container .project .text_container .pro-title{
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-weight:900;
+    position: absolute;
+    top: 10px;
+}
+#project .container .project .text_container .pro-cntent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    margin: 5px;
+    font-size: .5rem;
+    padding: 20px;
+    
+    
+    
+}
+#project .container .project .text_container .pro-cntent p{
+    /* background-color: azure; */
+    /* width: 20px; */
+}
+#project .container .project .text_container .but{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 20px;
+    position: absolute;
+    bottom: 10px;
+}
+#project .container .project .text_container .but button{
+
+    text-align: center;
+    padding: 10px 15px 10px 15px;
+    font-size: .5rem;
+    text-transform: uppercase;
+    background-color:  rgb(56, 128, 196);;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+    border-radius: 7px;
+    transition: 1s;
+}
+#project .container .project .text_container .but button:hover{
+    background-color: rgb(199, 62, 140);
+}
+
+
+
+
+
+@media   screen  and (min-width:481px){
+    #project .container .project .text_container .pro-cntent{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: justify;
+        margin: 5px;
+        font-size: .8rem;
+        padding: 20px;
+        
+        
+        
+    }
+
+
+
+}
+
+@media   screen  and (min-width:800px){
+    #project .container .project .text_container .pro-cntent{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: justify;
+        margin: 5px;
+        font-size: 1rem;
+        padding: 20px;
+        
+        
+        
+    }
+
+
+
+}
+@media   screen  and (min-width:1024px) {
+    
+    #project .container{
+        /* background-color:#1a1a1a; */
+        display: flex;
+        gap: 0px;
+        align-items: center;
+        justify-content:center;
+        width: 80%;
+    
+    }
+    #project .container .project .proimage img{
+        width: 60%;
+        height: 250px;
+    }
+}

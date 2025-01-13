@@ -1,0 +1,300 @@
+#skills{
+
+    width: 100%;
+    height: 200vh;
+    position: relative;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    overflow: hidden;
+    /* border: 2px solid red; */
+}
+#skills .title{
+
+    width: 100%;
+    /* background-color: aqua; */
+    position: absolute;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#skills .title h1{
+    color:tomato;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+#skills .programilSkill{
+    background-color: #1c1a1a;
+    width: 400px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position:relative;
+    top: 0px;
+    padding: 20px;
+    /* border: 2px solid red; */
+
+}
+#skills .programilSkill .language{
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#skills .programilSkill .language .head{
+    text-transform: uppercase;
+    font-weight: 800;
+    color: royalblue;
+}
+#skills .programilSkill .language div{
+    display: flex;
+    gap: 40px;
+    position: relative;
+
+}
+#skills .programilSkill .language div .bar{
+    width: 250px;
+    background-color:#1f1f1f;
+    position: absolute;
+    right: 10px;
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow: inset 1px 1px 10px black;
+}
+#skills .programilSkill .language div .bar span{
+    display:block;
+    width: 0%;
+    background-color:rebeccapurple;
+    padding: 2px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px rebeccapurple;
+    position: relative;
+}
+#skills .programilSkill .language div .bar span::after{
+    content: "0%";
+    display: inline-block;
+    padding: 5px;
+    background-color: coral;
+    position: absolute;
+    right: -25px;
+    border-radius: 10px 10px 10px 0px;
+    font-size: .5rem;
+    top: -20px;
+    transform: rotate(-20deg);
+    
+
+}
+#skills .programilSkill .language .java .bar span{
+    width: 70%;
+}
+#skills .programilSkill .language .java .bar span::after{
+    content: "70%";
+}
+#skills .programilSkill .language .python .bar span{
+    width: 50%;
+}
+#skills .programilSkill .language .python .bar span::after{
+    content: "50%";
+}
+
+#skills .programilSkill .language .c .bar span{
+    width: 40%;
+}
+#skills .programilSkill .language .c .bar span::after{
+    content: "40%";
+}
+
+#skills .programilSkill .language .html .bar span{
+    width: 84%;
+}
+#skills .programilSkill .language .html .bar span::after{
+    content: "84%";
+}
+#skills .programilSkill .language .css .bar span{
+    width: 76%;
+}
+#skills .programilSkill .language .css .bar span::after{
+    content: "76%";
+}
+#skills .programilSkill .language .js .bar span{
+    width: 68%;
+}
+#skills .programilSkill .language .js .bar span::after{
+    content: "68%";
+}
+#skills .programilSkill .language .sql .bar span{
+    width: 68%;
+}
+#skills .programilSkill .language .sql .bar span::after{
+    content: "68%";
+}
+#skills .programilSkill .language .sql .bar span{
+    width: 68%;
+}
+#skills .programilSkill .language .mysql .bar span{
+    width: 77%;
+}
+#skills .programilSkill .language .mysql .bar span::after{
+    content: "77%";
+}
+#skills .programilSkill .language .oracle .bar span{
+    width: 65%;
+}
+#skills .programilSkill .language .oracle .bar span::after{
+    content: "65%";
+}
+
+
+#skills .frameWork{
+    background-color: #1c1a1a;
+    width: 400px;
+    height: 300px;
+    position: relative;
+    top: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 20px;
+}
+#skills .frameWork .Frame_works{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    /* background-color: antiquewhite; */
+    width: 150px;
+
+}
+#skills .frameWork .Frame_works .head{
+    color: royalblue;
+    text-transform: uppercase;
+    font-size: .7rem;
+    font-weight: 1000;position: absolute;
+    top: 20px;
+}
+#skills .frameWork .Database .head{
+    position: absolute;
+    top: 160px;
+    /* background-color: aliceblue; */
+}
+#skills .frameWork .Frame_works .outer_circle{
+    width: 50px;
+    height: 50px;
+    border: 2px solid rebeccapurple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    box-shadow: inset 1px 1px 10px black, 1px 1px 10px rebeccapurple;
+    
+
+}
+#skills .frameWork .Frame_works .outer_circle .inner_circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid rebeccapurple;
+    border-radius: 100%;
+    box-shadow:  1px 1px 10px black;
+}
+
+
+
+#skills .frameWork .Frame_works .outer_circle .inner_circle span{
+    position: relative;
+    font-size: .4rem;
+}
+#skills .frameWork .Frame_works .outer_circle .inner_circle span:nth-child(2){
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    
+    border-radius: 100%;
+}
+#skills .frameWork .Frame_works .outer_circle .inner_circle .SB{
+    border-left: 2px solid coral;
+    border-top:2px solid coral ;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+
+}
+#skills .frameWork .Frame_works .outer_circle .inner_circle .servlet{
+    border-left: 2px solid coral;
+    border-top:2px solid coral ;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+
+}
+#skills .frameWork .Frame_works .outer_circle .inner_circle .react{
+    border-left: 2px solid coral;
+    border-top:2px solid coral ;
+    border-right: 2px solid coral;
+    border-bottom: 2px solid white;
+
+}
+#skills .frameWork .Frame_works .outer_circle .inner_circle .hibernet{
+    border-left: 2px solid coral;
+    border-top:2px solid coral ;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+
+}
+#skills .frameWork .Frame_works .outer_circle .inner_circle .jdbc{
+    border-left: 2px solid coral;
+    border-top:2px solid coral ;
+    border-right: 2px solid coral;
+    border-bottom: 2px solid white;
+
+}
+
+.tools{
+    width: 400px;
+    height:240px;
+    background-color: #1c1a1a;
+    position: relative;
+    top: 90px;
+}
+
+@media   screen  and (min-width:1024px){
+    #skills{
+
+      height: 120vh;
+      /* border: 2px solid red; */
+      display: flex;
+      flex-direction: row;
+    
+    } 
+    #skills .programilSkill{
+        background-color: #1c1a1a;
+        width: 400px;
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        position: absolute;
+        left: 150px;
+        padding: 20px;
+        top: 90px;
+    
+    }
+    #skills .frameWork{
+        position: absolute;
+        right: 200px;
+    }
+    #skills .tools{
+        position: absolute;
+        right: 200px;
+        top: 400px;
+    }
+   
+}

@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    /* color: white; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #1f1f1f;
+    color: white;
+}
+::-webkit-scrollbar{
+    width: 7px;
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background-color: coral;
+    box-shadow: 1px 1px 10px coral;
+    border-radius: 90px;
+   
+    
+}
+::-webkit-scrollbar-button{
+    cursor: pointer;
+    width: 20px;
+}
+
+::-webkit-scrollbar-button{
+    background-color: rgb(28, 28, 28);
+}
+

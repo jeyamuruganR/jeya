@@ -1,0 +1,223 @@
+#home{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid wheat; */
+   ;
+
+}
+#home .left{
+    /* border: 2px solid rgb(231, 150, 0); */
+    width: 350px;
+    height: 320px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+    /* overflow: hidden; */
+    padding: 20px;
+    
+    
+
+}
+#home .left .content{
+    position: absolute;
+    top: 0px;
+    left: -70px;
+    width: 500px;
+    /* border: 2px solid red; */
+    overflow: hidden;
+    padding: 20px;
+    height: 350px;
+    
+}
+#home .left .content h1{
+    font-size: 2rem;
+    position: relative;
+    left: 10px;
+    
+
+}
+
+#home .left .content  h2{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+#home .left .content  h2 span:first-child{
+    color: coral;
+}
+#home .left .content  h4{
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    letter-spacing: 9px;
+    
+    
+}
+#home .left .content p{
+    color: coral;
+    font-size: .6rem;
+    overflow-wrap: break-word;
+    /* border: 2px solid white; */
+    width: 320px;
+
+    
+}
+#home .left .content .button{
+
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    position: relative;
+    
+
+
+}
+#home .left .content .button button{
+    padding: 10px 50px 10px 50px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: .6rem;
+    font-weight: 800;
+    background-color: tomato;
+    box-shadow: 1px 1px 10px tomato;
+
+}
+#home .left .content .button button a{
+
+    text-decoration: none;
+    color: black;
+}
+#home .right{
+    /* border: 2px solid wheat; */
+    width: 500px;
+    height: 530px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+    top: 20px;
+    
+    
+    
+}
+#home .right div {
+    width: 500px;
+    height: 530px;
+    /* border: 2px solid crimson; */
+    background-image:radial-gradient(rgba(236, 145, 10, 0.518)30%, rgba(0, 68, 255, 0),rgba(255, 0, 0, 0));
+    position: relative;
+
+}
+
+#home .right div::after{
+   content: "";
+    width: 500px;
+    height: 530px;
+    background-image: linear-gradient(#1f1f1f00 0%,#1f1f1f 90%);
+    position: absolute;
+    left: 0;
+
+}
+
+
+@media   screen  and (min-width:760px){
+    #home{
+    
+        flex-direction:row;
+      
+    
+    }
+    #home .left{
+        /* border: 2px solid wheat; */
+        width: 700px;
+        height: 50vh;
+        z-index: 1;
+        position: absolute;
+        left: 50px;
+        bottom: 190px;
+    
+    
+    }
+ 
+    #home .right{
+        /* border: 2px solid wheat; */
+        width: 500px;
+        height: 530px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        position: absolute;
+        right: 160px;
+        top: 60px;
+       
+        
+    }
+    #home .left .content{
+        position: absolute;
+        top: 100px;
+        left: 50px;
+        width: 500px;
+        /* border: 2px solid red; */
+        
+    }
+    #home .left .content h1{
+        font-size: 3rem;
+    }
+    #home .left .content h2{
+        font-size: 1.4rem;
+    }
+    #home .left .content h4{
+        font-size: 4.6rem;
+    }
+
+}
+
+@media   screen  and (min-width:1025px) {
+    #home{
+   
+        
+        flex-direction:row;
+      
+    
+    }
+    #home .left{
+        /* border: 2px solid wheat; */
+        width: 800px;
+        height: 80vh;
+        z-index: 1;
+        position: absolute;
+        left: 100px;
+        top: 20px;
+    
+    }
+    #home .right{
+        /* border: 2px solid wheat; */
+        width: 500px;
+        height: 530px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        position: absolute;
+        right: 160px;
+        top: 60px;
+       
+        
+    }
+    #home .left .content{
+        position: absolute;
+        top: 100px;
+        left: 50px;
+        width: 500px;
+        /* border: 2px solid red; */
+        
+    }
+}
