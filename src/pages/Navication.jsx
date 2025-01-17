@@ -1,3 +1,4 @@
+// import icones
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
@@ -10,15 +11,13 @@ import { useEffect, useState } from 'react';
 
 const Navication = () =>{
 
-    
-
     return(
 
         <div className="navcontainer">
             <div className="logo">
                     <h2>JEYAMURUGAN</h2>
             </div>
-            
+            {/* nevication container */}
             <div className="nav">
                         
                     <ul>
