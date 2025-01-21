@@ -1,9 +1,8 @@
 #project{
     width: 100%;
-    height: auto;
+    /* height: 100vh; */
     position: relative;
     overflow: hidden;
-    /* border: 2px solid red; */
     margin-bottom: 20px;
     padding-bottom: 40px;
     display: flex;
@@ -11,166 +10,109 @@
     justify-content: center;
     flex-direction: column;
 }
-#project .head{
 
-    text-align: center;
-    margin-top: 30px;
+#project .head h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color:tomato;
+    margin-bottom: 20px;
     text-transform: uppercase;
-    color: tomato;
-    font-weight: 900;
-
 }
 
 #project .container{
-    /* background-color:#1a1a1a; */
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0px;
-    align-items: center;
-    justify-content: center;
     width: 100%;
-
-
-}
-#project .container .project{
-    /* background-color: antiquewhite; */
-    display: flex;
-    /* gap: 10px; */
-    justify-content: center;
-}
-#project .container .project:nth-child(even){
-    flex-direction: row-reverse;
-}
-#project .container .project .proimage{
-    width: 50%;
-    height: 250px;
-    background-color: rgb(255, 255, 255);
-    margin-bottom: -30px;
     display: flex;
     align-items: center;
     justify-content: center;
+
     
-
-
 }
-#project .container .project .proimage img{
-    width: 100%;
+
+#project .container .project{
+    width: 250px;
     height: 250px;
-}
-#project .container .project .text_container{
-    width: 50%;
-    height: 250px;
-    background-color:black;
-    text-align: center;
-    color: white;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+    border: 2px solid #0d0d0d;
+    box-shadow:1 2 10px rgba(0,0,0,0.1);
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#project .container .project .innerBox{
+    display: inline-flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;
     
 }
-#project .container .project .text_container .pro-title{
-    text-transform: uppercase;
-    color: rgb(255, 255, 255);
-    font-weight:900;
-    position: absolute;
-    top: 10px;
-}
-#project .container .project .text_container .pro-cntent{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: justify;
-    margin: 5px;
-    font-size: .5rem;
-    padding: 20px;
-    
-    
-    
-}
-#project .container .project .text_container .pro-cntent p{
-    /* background-color: azure; */
-    /* width: 20px; */
-}
-#project .container .project .text_container .but{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    gap: 20px;
-    position: absolute;
-    bottom: 10px;
-}
-#project .container .project .text_container .but button{
+#project .container .project .innerBox .proimage{
 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+    border-radius: 10px;
+    border: 2px solid #0d0d0d;
+    box-shadow:1 2 10px rgba(0,0,0,0.1);
+}
+#project .container .project .innerBox .proimage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+    border-radius: 10px;
+    border: 2px solid #0d0d0d;
+    box-shadow:1 2 10px rgba(0,0,0,0.1);
+
+}
+#project .container .project .innerBox .proimage img:hover{
+    transform: scale(1.1);
+}
+#project .container .project .innerBox .detailes{
+    position: absolute;
+    bottom: 0px;
+    background-color: #000000d2;
+    width: 100%;
+    height: 80px;
     text-align: center;
-    padding: 10px 15px 10px 15px;
-    font-size: .5rem;
     text-transform: uppercase;
-    background-color:  rgb(56, 128, 196);;
-    color: white;
-    font-weight: 800;
+    padding-left: 10px;
+}
+#project .container .project .innerBox .detailes div:first-child{
+    font-size: .8rem;
+    color: #fff;
+    letter-spacing: 2px;
+}
+#project .container .project .innerBox .detailes div:last-child{
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+#project .container .project .innerBox .detailes div:last-child button{
+
+    padding: 5px 10px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
     cursor: pointer;
-    border-radius: 7px;
-    transition: 1s;
+    transition: 0.5s;
+    text-transform: uppercase;
+    font-size: .5rem;
 }
-#project .container .project .text_container .but button:hover{
-    background-color: rgb(199, 62, 140);
-}
+#project .container .project .innerBox .detailes .right{
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
 
-
-
-
-
-@media   screen  and (min-width:481px){
-    #project .container .project .text_container .pro-cntent{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: justify;
-        margin: 5px;
-        font-size: .8rem;
-        padding: 20px;
-        
-        
-        
-    }
-
-
-
-}
-
-@media   screen  and (min-width:800px){
-    #project .container .project .text_container .pro-cntent{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: justify;
-        margin: 5px;
-        font-size: 1rem;
-        padding: 20px;
-        
-        
-        
-    }
-
-
-
-}
-@media   screen  and (min-width:1024px) {
     
-    #project .container{
-        /* background-color:#1a1a1a; */
-        display: flex;
-        gap: 0px;
-        align-items: center;
-        justify-content:center;
-        width: 80%;
-    
-    }
-    #project .container .project .proimage img{
-        width: 60%;
-        height: 250px;
-    }
 }
