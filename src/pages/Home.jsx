@@ -10,7 +10,7 @@ import { faWhatsappSquare } from '@fortawesome/free-brands-svg-icons';
 import { faHackerrank } from '@fortawesome/free-brands-svg-icons';
 const Home = () =>{
 
-   const phoneNumber = "919788507235"; 
+   const phoneNumber = "919095268014"; 
   const message = "Hello, I want to chat with you!";
     return(
 
