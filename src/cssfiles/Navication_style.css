@@ -19,6 +19,18 @@
 
     
 }
+.navcontainer  .message{
+    position: absolute;
+    left: 10px;
+    top: 100px;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 1s;
+   
+}
+.navcontainer  .message:hover{
+    color: coral;
+}
 .navcontainer .logo h2::first-letter{
 
     color: RED;
@@ -36,15 +48,15 @@
 }
 .navcontainer .nav{
     position: absolute;
-    /* background-color: aqua; */
-    right: 0px;
+    background-color: rgba(0, 0, 0, 0.386);
+    right: 10px;
     top: 40px;
     width: 50px;
-    height: 300px;
-    /* cursor: pointer; */
-    /* background-color:coral; */
+    height: 250px;
+    
+   
     border-radius: 10px;
-    /* overflow: hidden; */
+    
     transition: 1s;
    display: flex;
    align-content: center;
@@ -171,4 +183,69 @@
     top: 248px;
     width: 65PX;
     left: -70PX;
+}
+@media   screen  and (min-width:1024px)
+{
+
+
+    /* .navcontainer .nav{
+        position: sticky;
+        left: 20px;
+    } */
+}
+
+
+
+.navcontainer .mag{
+    width: 300px;
+    height: 400px;
+    z-index: 200;
+    background-color: rgba(0, 0, 0, 0.564);
+    border-radius: 20px;
+    position: absolute;
+    left: 50px;
+    top: 100px;
+    display: none;
+}
+
+.navcontainer .mag div form{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.navcontainer .mag div form input{
+    width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.navcontainer .mag div form  label{
+position: relative;
+top: 10px;
+left:-70px;
+text-transform: uppercase;
+}
+textarea{
+    width: 250px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    /* background-color: aqua; */
+    font-size: 1.5rem;
+    transition: 1s;
+    cursor: pointer;
+}
+.close:hover{
+    color: red;
+}
+.but1:hover{
+    background-color: coral;
 }

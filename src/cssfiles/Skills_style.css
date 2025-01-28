@@ -1,7 +1,7 @@
 #skills{
 
     width: 100%;
-    height: 200vh;
+    height: 190dvh;
     position: relative;
     display: flex;
     gap: 20px;
@@ -10,14 +10,15 @@
     align-items: center;
     align-content: center;
     overflow: hidden;
+    padding: 10px;
     /* border: 2px solid red; */
 }
 #skills .title{
 
     width: 100%;
     /* background-color: aqua; */
-    position: absolute;
-    top: 20px;
+   position: absolute;
+   top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,6 +40,7 @@
     position:relative;
     top: 0px;
     padding: 20px;
+
     /* border: 2px solid red; */
 
 }
@@ -263,12 +265,24 @@
     background-color: #1c1a1a;
     position: relative;
     top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tools ul{
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    justify-content:center;
+}
+.tools ul li{
+    padding-bottom: 30px;
 }
 
 @media   screen  and (min-width:1024px){
     #skills{
 
-      height: 120vh;
+      height: 120dvh;
       /* border: 2px solid red; */
       display: flex;
       flex-direction: row;
@@ -295,6 +309,8 @@
         position: absolute;
         right: 200px;
         top: 400px;
+        
+        
     }
    
 }

@@ -5,6 +5,14 @@ export const ContactUs = () => {
     const[email, setEmail] = useState('');  
     const[message, setMessage] = useState('');
 
+    const close = () =>{
+      const magElement = document.querySelector('.close');
+
+      if(window.getComputedStyle(magElement).display === "block"){
+          document.getElementsByClassName("mag")[0].style.display = "none";
+      }
+  }
+
     const handleSubmit = async (e) => {   
         e.preventDefault();
         console.log(name, email, message);
@@ -43,8 +51,11 @@ export const ContactUs = () => {
       <input type="email" name="user_email" value={email} onChange={(e) =>setEmail(e.target.value)} />
       <label>Message</label>
       <textarea name="message" value={message} onChange={(e) =>setMessage(e.target.value)} />
-      <input type="submit" value="Send" className='but' />
+      <input type="submit" value="Send" className='but1' />
     </form>
+    <div className="close" onClick={close}>
+      X
+    </div>
    </div>
   );
 };

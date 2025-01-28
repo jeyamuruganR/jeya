@@ -14,11 +14,6 @@ import Eduction from './pages/Eduction'
 
 import './cssfiles/Eduction_style.css'
 
-
-import Contect from './pages/Contect'
-
-import './cssfiles/Contect_style.css'
-
 import Home from './pages/Home'
 
 import './cssfiles/Home_style.css'
@@ -47,8 +42,7 @@ function App() {
     <Skills/>
     {/* Eduction Section */}
     <Eduction/>
-    {/* Contect Section */}
-    <Contect/>
+   
 
     </>
   )

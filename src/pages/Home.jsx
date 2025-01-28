@@ -2,8 +2,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Homeimg from '../Images/view-3d-man-using-laptop-removebg-preview.png'
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faInstagramSquare } from '@fortawesome/free-brands-svg-icons';
+import { faWhatsappSquare } from '@fortawesome/free-brands-svg-icons';
+import { faHackerrank } from '@fortawesome/free-brands-svg-icons';
 const Home = () =>{
 
+   const phoneNumber = "919788507235"; 
+  const message = "Hello, I want to chat with you!";
     return(
 
         <section id="home">
@@ -19,6 +27,19 @@ const Home = () =>{
                         <button><a href="#about">about  <FontAwesomeIcon icon={faUser} /> </a></button>
                         <button><a href="../Images/JEYAMURUGAN_Resume1.pdf" download="jeyamurugan.pdf" target='_blank' rel="noopener noreferrer">Resume  <FontAwesomeIcon icon={faDownload} /></a></button>
                     </div>
+                    <div className="icons">
+                        <ul>
+                            <li><a href=""><FontAwesomeIcon icon={faEnvelope}  shake/></a></li>
+                            
+                            <li><a href=""><FontAwesomeIcon icon={faInstagramSquare} shake /></a></li>
+                            <li><a href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`}
+                            target="_blank"
+                            rel="noopener noreferrer"><FontAwesomeIcon icon={faWhatsappSquare}  shake/></a></li>
+                            <li><a href="https://www.hackerrank.com/profile/jeyamuruganraje1" target='_blank'><FontAwesomeIcon icon={faHackerrank} shake /></a></li>
+                            
+            
+                        </ul>
+                        </div>
                 </div>
             </div>
 
@@ -27,6 +48,7 @@ const Home = () =>{
                <img src={Homeimg} alt="" />
                </div>
             </div>
+           
 
         </section>
     );
