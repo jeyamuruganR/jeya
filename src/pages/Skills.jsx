@@ -1,4 +1,8 @@
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import { faPhotoFilm } from "@fortawesome/free-solid-svg-icons";
+
 const Skills = () =>{
 
     const Programming_Languages = ["Java","Python", "C"];

@@ -8,6 +8,7 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faInstagramSquare } from '@fortawesome/free-brands-svg-icons';
 import { faWhatsappSquare } from '@fortawesome/free-brands-svg-icons';
 import { faHackerrank } from '@fortawesome/free-brands-svg-icons';
+import  Earth from '../Images/earth.mp4'
 const Home = () =>{
 
    const phoneNumber = "919095268014"; 
@@ -15,7 +16,11 @@ const Home = () =>{
     return(
 
         <section id="home">
-
+            <div className="video">
+                <video autoPlay loop muted >
+                <source src={Earth} type='video/mp4'/>
+                </video>
+            </div>
             <div className="left">
                 <div className="content" >
                     <span></span>

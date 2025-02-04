@@ -27,7 +27,7 @@ const Project = () =>{
                         </div>
                        
                         <div className="but">
-                
+                        <button>DEMO</button>
                             <button>sourcecode</button>
                             
                         </div>
@@ -50,6 +50,7 @@ const Project = () =>{
                         </div>
                        
                         <div className="but">
+                        <button>DEMO</button>
                             <button>sourcecode</button>
                             
                         </div>
@@ -69,7 +70,7 @@ const Project = () =>{
                         </div>
                        
                         <div className="but">
-                        
+                        <button>DEMO</button>
                             <button>sourcecode</button>
                             
                         </div>
@@ -78,6 +79,8 @@ const Project = () =>{
                         </div>
                     </div>
                 </div>
+
+                {/*  project  */}
                 <div className="project pro4">
                     
                     <div className="innerBox">

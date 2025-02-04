@@ -9,6 +9,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: #1f1f1f;
 }
 
 #project .head h1{
@@ -21,26 +22,28 @@
 
 #project .container{
     display: flex;
-    overflow-x: auto;
-    /* border: 2px solid red; */
-    gap: 20px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
 }
 
 #project .container .project{
+    scroll-snap-align: start;
+    flex-shrink: 0;
     width: 250px;
-    height: 250px;
+    height: 300px;
     margin: 20px;
     position: relative;
     overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.53);
     transition: 0.5s;
-    border: 2px solid #0d0d0d;
-    box-shadow:1 2 10px rgba(0,0,0,0.1);
+    border: 2px solid #1f1f1f;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    border-radius: 5px;
+    
+    
 }
 #project .container .project .innerBox{
     display: inline-flex;
@@ -52,21 +55,22 @@
 #project .container .project .innerBox .proimage{
 
     width: 100%;
-    height: 100%;
+    height: 74%;
     object-fit: cover;
     transition: 0.5s;
-    border-radius: 10px;
-    border: 2px solid #0d0d0d;
+    border: 2px solid #1f1f1f;
     box-shadow:1 2 10px rgba(0,0,0,0.1);
+    position: absolute;
+    top: 0;
+    
 }
 #project .container .project .innerBox .proimage img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: 0.5s;
-    border-radius: 10px;
     border: 2px solid #0d0d0d;
-    box-shadow:1 2 10px rgba(0,0,0,0.1);
+    box-shadow:1 2 10px rgba(2, 2, 2, 0.1);
 
 }
 #project .container .project .innerBox .proimage img:hover{
@@ -75,7 +79,7 @@
 #project .container .project .innerBox .detailes{
     position: absolute;
     bottom: 0px;
-    background-color: #000000d2;
+    background-color: #1f1f1f;
     width: 100%;
     height: 80px;
     text-align: center;

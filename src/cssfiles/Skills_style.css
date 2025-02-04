@@ -42,6 +42,7 @@
     padding: 20px;
 
     /* border: 2px solid red; */
+    box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.53);
 
 }
 #skills .programilSkill .language{
@@ -164,6 +165,7 @@
     flex-wrap: wrap;
     gap: 40px;
     padding: 20px;
+    box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.53);
 }
 #skills .frameWork .Frame_works{
     display: flex;
@@ -268,6 +270,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.53);
 }
 .tools ul{
     display: flex;
