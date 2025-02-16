@@ -1,120 +1,50 @@
+.proimage img{
+
+    width: 200px;
+}
+
 #project{
     width: 100%;
-    /* height: 100vh; */
-    position: relative;
+    height: auto;
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
-    margin-bottom: 20px;
-    padding-bottom: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #1f1f1f;
-}
-
-#project .head h1{
-    font-size: 2.5rem;
-    font-weight: 700;
-    color:tomato;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-}
-
-#project .container{
-    display: flex;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-}
-
-#project .container .project{
-    scroll-snap-align: start;
-    flex-shrink: 0;
-    width: 250px;
-    height: 300px;
-    margin: 20px;
     position: relative;
-    overflow: hidden;
-    box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.53);
-    transition: 0.5s;
-    border: 2px solid #1f1f1f;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 5px;
-    
-    
-}
-#project .container .project .innerBox{
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-}
-#project .container .project .innerBox .proimage{
-
-    width: 100%;
-    height: 74%;
-    object-fit: cover;
-    transition: 0.5s;
-    border: 2px solid #1f1f1f;
-    box-shadow:1 2 10px rgba(0,0,0,0.1);
-    position: absolute;
-    top: 0;
-    
-}
-#project .container .project .innerBox .proimage img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: 0.5s;
-    border: 2px solid #0d0d0d;
-    box-shadow:1 2 10px rgba(2, 2, 2, 0.1);
 
 }
-#project .container .project .innerBox .proimage img:hover{
-    transform: scale(1.1);
-}
-#project .container .project .innerBox .detailes{
-    position: absolute;
-    bottom: 0px;
-    background-color: #1f1f1f;
-    width: 100%;
-    height: 80px;
+ #project .head{
     text-align: center;
     text-transform: uppercase;
-    padding-left: 10px;
-}
-#project .container .project .innerBox .detailes div:first-child{
-    font-size: .8rem;
-    color: #fff;
-    letter-spacing: 2px;
-}
-#project .container .project .innerBox .detailes div:last-child{
-    font-size: 1.2rem;
-    color: #fff;
-    font-weight: 700;
-    letter-spacing: 2px;
-}
-#project .container .project .innerBox .detailes div:last-child button{
-
-    padding: 5px 10px;
-    background-color: #fff;
-    color: #000;
-    border: none;
-    border-radius: 5px;
-    margin-top: 10px;
-    margin-left: 10px;
-    cursor: pointer;
-    transition: 0.5s;
-    text-transform: uppercase;
-    font-size: .5rem;
-}
-#project .container .project .innerBox .detailes .right{
-    position: absolute;
-    right: 20px;
-    bottom: 30px;
-
+    color: tomato;
+ }
+ #project .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+   
     
-}
+    
+ }
+ #project .container::-webkit-scrollbar{
+    
+    height: 0;
+ }
+ #project .container .project{
+    flex: 0 0 250px;
+    height: 300px;
+    background-color:#1f1f1f;
+    text-align: center;
+    scroll-snap-align: start;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 1px 1px 5px black;
+    border:2px solid #1f1f1f;
+    padding: 10px;
+    -ms-flex-align: start;
+    
+    
+    
+    
+ }

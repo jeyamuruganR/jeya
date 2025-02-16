@@ -21,6 +21,8 @@
     padding:min(1em,8%);
     position: absolute;
     bottom: 20px;
+    
+    
 }
 #home .left .content{
     overflow: hidden;
@@ -29,7 +31,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+
+
+    
     
 }
 #home .left .content h1{
@@ -53,15 +57,29 @@
     font-size: 2.8rem;
     text-transform: uppercase;
     letter-spacing: 9px;
+    color: aqua;
     
     
 }
+.rainbow {
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbowAnimation 6s linear infinite;
+  }
+
+  @keyframes rainbowAnimation {
+    0% { background-position: 0%; }
+    100% { background-position: 100%; }
+  }
 #home .left .content p{
-    color: coral;
+    color:white;
     font-size: .6rem;
     overflow-wrap: break-word;
     /* border: 2px solid white; */
     width: 320px;
+    text-align: justify;
+
 
     
 }
@@ -82,7 +100,7 @@
     padding: 10px 50px 10px 50px;
     border-radius: 10px;
     text-transform: uppercase;
-    font-size: .6rem;
+    font-size: .5rem;
     font-weight: 800;
     background-color: tomato;
     transition: 1s;
@@ -111,28 +129,28 @@
     list-style: none;
     position: relative;
     right: 20px;
-    gap: 50px;
+    gap: 20px;
 
 
 
 }
 #home .left .content .icons ul li a{
-    font-size: .7rem;
-   
-    padding: 7px;
+    font-size: .8rem;
+    padding: 3px;
     display: flex;
     align-items: center;
     border-radius: 100px;
     color: white;
     border: 2px solid coral;
     transition: 1s;
+    background-color: coral;
 }
 #home .left .content .icons ul li a:hover{
     box-shadow: 1px 1px 10px coral;
      background-color: coral;
 }
 #home .right{
-    /* border: 2px solid wheat; */
+    
     width: 500px;
     height: 530px;
     display: flex;
@@ -147,21 +165,11 @@
 #home .right div {
     width: 500px;
     height: 530px;
-    /* border: 2px solid crimson; */
-    /* background-image:radial-gradient(rgba(236, 145, 10, 0.518)30%, rgba(0, 68, 255, 0),rgba(255, 0, 0, 0)); */
     position: relative;
 
 }
 
-/* #home .right div::after{
-   content: "";
-    width: 500px;
-    height: 530px;
-    background-image: linear-gradient(#1f1f1f00 0%,#1f1f1f 90%);
-    position: absolute;
-    left: 0;
 
-} */
 
 #home .video video{
     width: 100%;
@@ -240,10 +248,11 @@
     
     }
     #home .left{
-        scale: 1.5;
+        scale: 1.4;
         position: absolute;
         left: 200px;
         top: 300px;
+        
     }
     #home .left .content{
         height: 300px;
